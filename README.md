@@ -79,18 +79,10 @@ Benefício: maior confiabilidade e menos erros.
 * Uso de Stream API
 * Melhor legibilidade
 
-Benefício: código mais fácil de entender e manter.
-
 
 
 ## Tecnologias Utilizadas
 
 * Java
 
----
 
-## Considerações Finais
-
-A aplicação de boas práticas de desenvolvimento contribuiu para melhorar a organização, legibilidade e manutenção do sistema, tornando o projeto mais preparado para evoluções futuras.
-
----
