@@ -15,6 +15,6 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuário: " + nome + " | Contato: " + contato;
+        return "Usuário: " + nome + " - Contato: " + contato;
     }
 }

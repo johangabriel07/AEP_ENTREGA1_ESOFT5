@@ -66,9 +66,9 @@ public class Solicitacao {
         sb.append("Localização: ").append(localizacao).append("\n");
         sb.append("Criado em  : ").append(dataCriacao.format(fmt)).append("\n");
         sb.append("Prazo alvo : ").append(prazoAlvo).append(" horas\n");
-        sb.append("Situação   : ").append(atrasado ? "⚠ ATRASADO" : "Dentro do prazo").append("\n");
+        sb.append("Situação   : ").append(atrasado ? "ATRASADO" : "Dentro do prazo").append("\n");
         if (atrasado) {
-            sb.append("Justificativa de atraso: verificar com equipe responsável.\n");
+            sb.append("Justificativa de atraso: verificar com equipe responsavel.\n");
         }
         if (!anonimo && nomeRequerente != null) {
             sb.append("Requerente : ").append(nomeRequerente).append("\n");

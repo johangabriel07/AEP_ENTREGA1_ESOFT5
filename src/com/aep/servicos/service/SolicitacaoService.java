@@ -50,7 +50,7 @@ public class SolicitacaoService {
 
         if (!fluxoValido(s.getStatus(), novoStatus)) {
             throw new IllegalStateException(
-                    "Transição invalida: " + s.getStatus() + " → " + novoStatus
+                    "Mudança invalida: " + s.getStatus() + " → " + novoStatus
             );
         }
 
@@ -78,28 +78,28 @@ public class SolicitacaoService {
 
     private void validarDescricao(String desc, boolean anonimo) {
         if (desc == null || desc.isBlank()) {
-            throw new IllegalArgumentException("Descrição é obrigatória.");
+            throw new IllegalArgumentException("Descrição é obrigatoria.");
         }
     }
 
     private void validarLocalizacao(String loc) {
         if (loc == null || loc.isBlank()) {
-            throw new IllegalArgumentException("Localização é obrigatória.");
+            throw new IllegalArgumentException("Localização é obrigatoria.");
         }
     }
 
     private void validarIdentificacao(String nome, String contato) {
         if (nome == null || nome.isBlank()) {
-            throw new IllegalArgumentException("Nome é obrigatório para solicitações identificadas.");
+            throw new IllegalArgumentException("Nome é obrigatorio para solicitações identificadas.");
         }
         if (contato == null || contato.isBlank()) {
-            throw new IllegalArgumentException("Contato é obrigatório para solicitações identificadas.");
+            throw new IllegalArgumentException("Contato é obrigatorio para solicitações identificadas.");
         }
     }
 
     private void validarComentario(String comentario) {
         if (comentario == null || comentario.isBlank()) {
-            throw new IllegalArgumentException("Comentário é obrigatório ao atualizar status.");
+            throw new IllegalArgumentException("Comentário é obrigatorio ao atualizar status.");
         }
     }
 

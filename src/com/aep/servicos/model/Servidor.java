@@ -13,6 +13,6 @@ public class Servidor extends Usuario {
 
     @Override
     public String toString() {
-        return "Servidor: " + nome + " | Setor: " + setor + " | Contato: " + contato;
+        return "Servidor: " + nome + " - Setor: " + setor + " - Contato: " + contato;
     }
 }
